@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history"
+        android:title="History"/>
+
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/notification"
+        android:title="Notification"/>
+
+    <item
+        android:id="@+id/nav_ride"
+        android:icon="@drawable/ride"
+        android:title="Ride request"/>
+
+
+    <item
+        android:id="@+id/nav_rating"
+        android:icon="@drawable/rating"
+        android:title="Rating"/>
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/account"
+        android:title="Account"/>
+
+</menu>

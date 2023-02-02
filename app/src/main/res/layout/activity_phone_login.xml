@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".PhoneLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_120mdp"
+            android:layout_height="@dimen/_120mdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/splash_logo"
+            android:layout_marginTop="@dimen/_80mdp"
+            />
+
+        <LinearLayout
+            android:layout_below="@id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_16mdp"
+            android:layout_marginStart="@dimen/_16mdp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50mdp"
+                android:layout_marginStart="@dimen/_16mdp"
+                android:background="@drawable/spinner_login"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50mdp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8mdp"
+                android:layout_marginEnd="@dimen/_16mdp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:padding="@dimen/_6mdp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textColorHint="@color/gray"
+                android:textStyle="bold"
+                android:hint="Eg. 9999999999"
+                android:background="@drawable/spinner_login"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/OTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:layout_below="@id/firstPinView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14font_mdp"/>
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/firstPinView"
+        android:layout_below="@+id/phoneLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_160mdp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:visibility="gone"
+        android:hint="Hint."
+        android:inputType="number"
+        android:itemBackground="@color/white"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:lineColor="@color/black"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+</RelativeLayout>

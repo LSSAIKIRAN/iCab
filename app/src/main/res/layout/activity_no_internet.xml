@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".NoInternetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_80mdp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nowifi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oops! Connect Internet"
+            android:textSize="@dimen/_20font_mdp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8mdp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35mdp"
+            android:layout_marginBottom="@dimen/_16mdp"
+            android:textColor="@color/black"
+            android:text="Retry"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15font_mdp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

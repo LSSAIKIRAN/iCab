@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_120mdp"
+        android:layout_height="@dimen/_120mdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_120mdp"
+        android:layout_marginBottom="@dimen/_8mdp"
+        android:src="@drawable/splash_logo" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_10mdp"
+        android:backgroundTint="@color/light_green"
+        android:drawableLeft="@drawable/phone"
+        android:drawableTint="@color/black"
+        android:elevation="@dimen/_6mdp"
+        android:paddingLeft="@dimen/_16mdp"
+        android:paddingRight="@dimen/_16mdp"
+        android:text="Continue with phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10font_mdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="OR"
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/googleBtn"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_60mdp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/_16mdp"
+        android:paddingRight="@dimen/_16mdp"
+        android:src="@drawable/google" />
+
+</LinearLayout>
